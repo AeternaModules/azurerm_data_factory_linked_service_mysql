@@ -7,6 +7,7 @@ resource "azurerm_data_factory_linked_service_mysql" "data_factory_linked_servic
   additional_properties    = each.value.additional_properties
   annotations              = each.value.annotations
   description              = each.value.description
+  driver_version           = each.value.driver_version
   integration_runtime_name = each.value.integration_runtime_name
   parameters               = each.value.parameters
 }
